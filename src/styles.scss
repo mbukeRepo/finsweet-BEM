@@ -1,0 +1,797 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin textGradient {
+  background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  @apply font-roboto text-[24px] font-bolder;
+}
+
+/* 
+   component: button
+*/
+.button {
+  @apply outline-none font-roboto;
+
+  &__inner {
+    @apply rounded-xl py-4 px-8 bg-primary text-sm font-semibold text-white;
+    &--white {
+      @apply bg-white text-primary;
+    }
+    &--outlined {
+      @apply border border-primary border-opacity-10;
+    }
+  }
+}
+/* 
+   component: nav-bar
+*/
+.nav-bar {
+  @apply container mx-auto px-10 py-4 font-roboto relative z-20 bg-white;
+
+  &__container {
+    @apply flex items-center justify-between;
+  }
+
+  &__logo {
+    @apply h-6 bg-cover;
+  }
+
+  &__container {
+    @apply flex items-center;
+  }
+
+  &__menu {
+    @apply flex items-center gap-6 font-roboto font-[400] text-[16px];
+  }
+
+  &__links {
+    @apply flex items-center gap-6  font-roboto font-[400] text-[16px];
+  }
+}
+
+.header {
+  @apply container mx-auto px-10 relative text-primary;
+  &__blur-gradient {
+    @apply absolute top-12 left-48 w-[600px] h-[496px];
+    filter: blur(50px);
+    background: rgb(211, 236, 242);
+    background: radial-gradient(
+      circle,
+      rgba(211, 236, 242, 1) 42%,
+      rgba(244, 252, 249, 1) 70%
+    );
+  }
+  &__container {
+    @apply flex flex-col items-center text-center relative z-10 mt-24 gap-16;
+  }
+  &__dashboard-img {
+    @apply w-[80%];
+    .image {
+      @apply w-full bg-cover;
+    }
+  }
+  &__content {
+    @apply text-center flex flex-col gap-8 items-center;
+  }
+  &__title {
+    @apply text-[56px] font-roboto text-center font-bolder;
+  }
+  &__text {
+    @apply text-primary opacity-[0.87] text-center font-roboto font-[400] text-[18px];
+  }
+  &__input {
+    @apply flex-grow outline-none;
+  }
+  &__form {
+    @apply rounded-[1.5rem] bg-white w-[576px] h-[72px] flex items-center px-8;
+  }
+}
+
+.features {
+  @apply container mx-auto flex flex-col gap-12 px-10 py-16 items-center;
+  &__title {
+    @include textGradient();
+  }
+  &__header {
+    @apply flex flex-col items-center gap-8;
+  }
+  &__subtitle {
+    @apply text-center text-[48px] leading-[120%] font-bolder;
+  }
+
+  &__content {
+    @apply rounded-3xl bg-[#E0E4FC] p-12 flex gap-8;
+  }
+  &__card {
+    @apply text-primary flex flex-col gap-6;
+    &__title {
+      @apply font-roboto font-bolder text-[32px] leading-[120%];
+    }
+    &__text {
+      @apply font-[400] text-[16px] text-primary;
+    }
+  }
+}
+
+.why-us {
+  @apply container mx-auto px-10 grid grid-cols-2 items-center py-16;
+  &__title {
+    @include textGradient();
+  }
+  &__subtitle {
+    @apply font-roboto text-[48px] leading-[120%] font-bolder w-4/5;
+  }
+  &__text {
+    @apply font-roboto font-[400] text-[16px] leading-[150%] text-primary w-4/5;
+  }
+  &__list {
+    @apply flex flex-col gap-10;
+    &__item {
+      @apply flex gap-8 items-center;
+      &__text {
+        @apply font-[500] leading-[150%] text-[20px] font-roboto text-primary;
+      }
+    }
+  }
+}
+
+.cta {
+  @apply relative overflow-hidden font-roboto container mx-auto;
+  &__background {
+  }
+  &__container {
+    @apply relative bg-transparent z-10 container py-12 px-12 mx-auto grid grid-cols-2 items-center;
+  }
+  &__content {
+    @apply flex flex-col gap-6;
+  }
+  &__title {
+    @apply text-primary font-[700] text-[48px] leading-[120%] font-roboto;
+  }
+  &__text {
+    @apply font-[400] text-[16px] leading-[24px] font-roboto text-primary w-[78%];
+  }
+  &__gradient {
+    @apply absolute top-0 w-full h-full;
+    filter: blur(50px);
+    background: rgb(211, 236, 242);
+    background: radial-gradient(
+      circle,
+      rgba(211, 236, 242, 1) 42%,
+      rgba(244, 252, 249, 1) 70%
+    );
+  }
+  &__image {
+  }
+}
+
+.logos {
+  @apply flex justify-center  gap-10 container mx-auto px-12 py-16 w-full;
+  &__logo {
+    @apply flex-1;
+  }
+}
+
+.discover-more {
+  @apply container mx-auto px-10 grid grid-cols-2 items-center py-16;
+  &__title {
+    @include textGradient();
+  }
+  &__subtitle {
+    @apply font-roboto text-[48px] leading-[120%] font-bolder w-4/5;
+  }
+  &__text {
+    @apply font-roboto font-[400] text-[16px] leading-[150%] text-primary w-4/5;
+  }
+  &__list {
+    @apply flex flex-col gap-10;
+    &__item {
+      @apply flex gap-8 items-center;
+      &__text {
+        @apply font-[500] leading-[150%] text-[20px] font-roboto text-primary;
+      }
+    }
+  }
+}
+
+.features-2 {
+  @apply flex flex-col items-center gap-12 container mx-auto px-12 py-12;
+  &__title {
+    @apply text-primary font-[700] text-[48px] leading-[120%] font-roboto;
+  }
+  &__list {
+    @apply grid grid-cols-3 bg-[#f9f0fb] p-12 rounded-3xl;
+    &__item {
+      @apply flex flex-col items-start gap-6 px-6;
+      &--with-b {
+        @apply border-r border-blue-300;
+      }
+      &__title {
+        @apply text-primary font-[700] text-[36px] font-roboto leading-[120%];
+      }
+      &__text {
+        @apply text-primary leading-[150%] text-[18px] font-[400] font-roboto;
+      }
+    }
+  }
+}
+
+.testimonial {
+  @apply py-24 flex flex-col gap-10 items-center container mx-auto px-12;
+  &__heading {
+    @apply w-3/5 text-center font-roboto text-[48px] leading-[120%] text-primary font-bolder;
+  }
+  &__list {
+    @apply grid grid-cols-3 gap-8;
+    &__item {
+      @apply flex flex-col gap-8 items-center text-center rounded-2xl border border-[#94d2ff] p-12;
+      &__title {
+        @apply text-primary text-[18px] font-[600] leading-[150%] text-center font-roboto;
+      }
+    }
+  }
+}
+.user {
+  @apply text-primary text-center font-roboto flex flex-col gap-2 items-center;
+  &__username {
+    @apply font-[500] text-[20px] leading-[150%];
+  }
+  &__image {
+    @apply h-[56px] w-[56px] rounded-full object-cover;
+  }
+  &__title {
+    @apply text-[12px] leading-[18px] font-[400] font-roboto;
+  }
+}
+
+.cta-2 {
+  @apply container mx-auto relative flex flex-col items-center gap-8 text-center overflow-hidden py-24 text-primary font-roboto;
+  &__content {
+    @apply relative bg-transparent z-20 flex flex-col items-center gap-8;
+  }
+  &__heading {
+    @apply font-bolder text-[56px] leading-[110%] text-center w-3/5;
+  }
+  &__text {
+    @apply text-[16px] leading-[150%] font-[400] text-primary text-center;
+  }
+  &__gradient {
+    @apply absolute top-0 h-full w-full;
+    filter: blur(150px);
+    background: rgb(246, 253, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(246, 253, 255, 1) 56%,
+      rgba(98, 241, 229, 1) 100%
+    );
+  }
+}
+.footer {
+  @apply bg-primary px-12 py-16 text-white container mx-auto flex flex-col items-center;
+  &__header {
+    @apply flex gap-10 w-full py-16  justify-around;
+  }
+
+  &__line {
+    // @apply w-[85%];
+  }
+
+  &__col {
+    @apply flex flex-col gap-2;
+  }
+  &__title {
+    @apply font-roboto font-[600] text-[18px] leading-[150%];
+  }
+  &__links {
+    @apply flex flex-col gap-2;
+  }
+  &__link {
+    @apply font-[400] text-[16px] leading-[150%] font-roboto opacity-[0.6];
+  }
+  &__lower {
+    @apply flex gap-3 items-center;
+  }
+  &__socials {
+    @apply flex gap-3 items-center;
+    &__text {
+      @apply font-roboto opacity-[0.5] text-[12px] font-[400];
+    }
+    &__list {
+      @apply flex gap-3 text-center;
+      &__item {
+        @apply bg-[#ffffff];
+      }
+    }
+  }
+}
+.contact-us {
+  @apply flex flex-col gap-8;
+  &__input {
+    @apply bg-[#2b2e3c] px-4 outline-none;
+  }
+  &__form {
+    @apply rounded-xl bg-[#2b2e3c]  flex items-center;
+  }
+}
+
+.product-header {
+  @apply relative container mx-auto px-12 py-16 font-roboto text-primary overflow-hidden;
+  &__content {
+    @apply grid grid-cols-2 gap-8 relative bg-transparent z-10;
+  }
+  &__heading {
+    @apply flex flex-col gap-6;
+  }
+  &__buttons {
+    @apply flex gap-4;
+  }
+  &__title {
+    @apply font-bolder text-[56px] leading-[110%];
+  }
+  &__image {
+    @apply w-full rounded-[0.85rem] overflow-hidden;
+  }
+  &__subtitle {
+    @apply font-[400] text-[18px] leading-[150%];
+  }
+  .logos {
+    @apply relative bg-transparent z-10;
+  }
+  &__gradient {
+    @apply absolute top-12 right-0 w-[1000px] h-[580px] overflow-hidden;
+    filter: blur(50px);
+    background: rgb(211, 236, 242);
+    background: radial-gradient(
+      circle,
+      rgba(211, 236, 242, 1) 42%,
+      rgba(244, 252, 249, 1) 70%
+    );
+  }
+}
+
+.product-features {
+  @apply relative flex flex-col gap-6 items-center container mx-auto overflow-hidden pt-24;
+  &__container {
+    @apply relative z-10 bg-transparent flex flex-col gap-6 items-center;
+  }
+  &__header {
+    @apply font-roboto leading-[120%] text-[48px] font-bold text-center w-[75%];
+  }
+  &__gradient {
+    @apply absolute -top-10 -right-[33rem] w-[2000px] flex justify-center h-[1000px] overflow-hidden;
+    filter: blur(5px);
+    background: rgb(211, 236, 242);
+    background: radial-gradient(
+      circle,
+      rgba(211, 236, 242, 1) 42%,
+      rgba(244, 252, 249, 1) 70%
+    );
+  }
+  &__list {
+    @apply grid grid-cols-3 gap-16 px-12 py-16  bg-[#f2f8fd]   mr-12  rounded-tr-[5rem];
+  }
+  .features__card {
+    &__title {
+      @apply font-bolder text-[24px] leading-[140%] text-primary font-roboto;
+    }
+    &__text {
+      @apply text-[16px] leading-[150%] font-[400] font-roboto text-primary;
+    }
+  }
+}
+
+.product-cta {
+  @apply relative  font-roboto container mx-auto px-12 py-12;
+  &--hidden {
+    @apply overflow-x-hidden;
+  }
+  &__image {
+    @apply flex-1 w-[80%];
+  }
+  &__title {
+    @include textGradient();
+    background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  &__subtitle {
+    @apply font-roboto text-[48px] leading-[120%] font-bolder w-4/5;
+  }
+  &__text {
+    @apply font-roboto font-[400] text-[16px] leading-[150%] text-primary w-4/5;
+  }
+
+  &__container {
+    @apply flex gap-8 items-center relative z-10 bg-transparent justify-between;
+    &--reverse {
+      @apply gap-24 flex-row-reverse;
+    }
+  }
+  &__content {
+    @apply flex flex-col gap-8 w-full flex-1;
+  }
+
+  &__gradient {
+    @apply absolute -left-8 -bottom-20 w-[400px] h-[600px] overflow-hidden;
+    filter: blur(50px);
+    background: rgb(211, 236, 242);
+    background: radial-gradient(
+      circle,
+      rgba(211, 236, 242, 1) 42%,
+      rgba(244, 252, 249, 1) 70%
+    );
+    &--align-left {
+      @apply right-0 left-[28rem] top-24  w-[1000px] h-[400px];
+    }
+  }
+}
+
+.plans-section {
+  @apply relative bg-gray-500 container mx-auto px-12 py-16 flex flex-col gap-8 items-center text-center;
+
+  &__list {
+    @apply grid grid-cols-3 gap-8 items-center;
+  }
+  &__header {
+    @apply flex flex-col gap-8 items-center;
+  }
+  &__title {
+    @apply font-bolder leading-[110%] text-[56px] text-center text-primary font-roboto w-4/5;
+  }
+  &__text {
+    @apply opacity-[0.87] text-primary leading-[150%] text-[18px] font-[400] font-roboto w-3/5;
+  }
+  &__container {
+    @apply relative bg-transparent z-20 flex flex-col gap-12 items-center;
+  }
+  &__gradient {
+    @apply absolute top-0 h-full w-full;
+    background: rgb(246, 253, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(246, 253, 255, 1) 33%,
+      rgba(165, 255, 249, 1) 60%,
+      rgba(199, 250, 246, 1) 79%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    filter: blur();
+  }
+}
+.plan {
+  @apply rounded-3xl bg-white font-roboto text-primary;
+
+  &--platinum {
+    background: linear-gradient(175.67deg, #d7e7f9 13.12%, #d5f4ec 96.48%);
+    /* Blue */
+
+    border: 4px solid #6b7cff;
+  }
+  &__header {
+    @apply w-full p-6 border-b border-[#D8D8D8];
+  }
+  &__body {
+    @apply w-full p-6;
+  }
+  &__footer {
+    @apply flex flex-col items-center p-6 gap-8;
+  }
+  &__list {
+    @apply flex flex-col gap-5;
+  }
+  &__item {
+    @apply flex gap-3 font-bolder text-[16px] text-primary;
+  }
+  &__header {
+    @apply flex gap-6;
+  }
+  &__title {
+    @apply text-primary leading-[120%] text-[36px] font-bolder font-roboto;
+  }
+  &__subtitle {
+    @apply text-primary opacity-[0.6] text-[16px] font-[400] font-roboto;
+  }
+  &__titles--center {
+    @apply flex flex-col gap-3 items-center;
+  }
+  &__text {
+    @apply text-center font-[400] text-[14px] leading-[150%] text-primary opacity-[0.87] w-4/5;
+  }
+}
+.faq-section {
+  @apply container mx-auto px-12 py-16;
+  &__container {
+    @apply bg-[#f0f2fe] rounded-xl p-12 flex gap-8;
+  }
+  &__title {
+    @apply text-primary text-[48px] font-bolder font-roboto leading-[120%];
+  }
+  &__header {
+    @apply flex flex-col gap-8;
+  }
+  &__subtitle {
+    @apply font-[400] text-[16px] text-primary opacity-[0.87] leading-[150%] font-roboto;
+  }
+}
+.questions {
+  @apply flex flex-col gap-6;
+  &__question {
+    @apply flex flex-col justify-center gap-12 p-8 bg-white rounded-2xl;
+  }
+
+  &__row {
+    @apply flex justify-between;
+  }
+  &__title {
+    @apply font-bolder text-[24px] leading-[140%] text-primary;
+  }
+  &__answer {
+    @apply text-primary opacity-[0.87] leading-[150%] font-[400] font-roboto;
+  }
+}
+
+.contact-header {
+  @apply container mx-auto px-12 py-16;
+  &__container {
+    @apply flex flex-col items-center gap-12;
+  }
+  &__title {
+    @apply text-primary font-bolder text-[56px] font-roboto leading-[110%];
+  }
+  &__content {
+    @apply bg-[#f0f2fe] p-8 rounded-3xl;
+  }
+  &__block {
+    @apply grid grid-cols-2 gap-12;
+  }
+  &__heading {
+    &__title {
+      @apply text-primary font-roboto text-[36px] font-bolder;
+    }
+    &__subtitle {
+      @apply font-[400] text-[18px] font-roboto text-primary mb-6;
+    }
+  }
+}
+
+.form {
+  @apply grid grid-cols-2 gap-2;
+  &__item {
+    &--span {
+      @apply col-span-2;
+    }
+  }
+  .input {
+    @apply rounded-lg p-4 outline-none;
+  }
+  .textbox {
+    @apply rounded-lg p-4 outline-none;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+  }
+  &__button {
+    @apply w-full col-span-2;
+    .button__inner {
+      @apply w-full;
+    }
+  }
+}
+
+.details {
+  @apply flex flex-col gap-8 px-12;
+  &__item {
+    @apply flex gap-4 items-center;
+  }
+  &__title {
+    @apply font-bolder text-[24px] font-roboto text-primary;
+  }
+  &__subtitle {
+    @apply text-primary opacity-[0.6] font-[400] text-[16px];
+  }
+}
+
+.about-header {
+  @apply container mx-auto px-12 py-16;
+  &__container {
+    @apply flex flex-col gap-8 items-center text-center;
+  }
+  &__title {
+    @apply font-bolder text-primary text-[56px];
+  }
+  &__subtitle {
+    @apply font-[400] leading-[150%] text-[18px] font-roboto w-3/5;
+  }
+  &__list {
+    @apply grid grid-cols-3 gap-10;
+  }
+}
+
+.about-us {
+  @apply flex flex-col items-center text-center py-16;
+  &__title {
+    @apply font-bolder text-[24px] font-roboto;
+    background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__subtitle {
+    @apply text-primary text-[48px] font-bolder font-roboto;
+  }
+  &__text {
+    @apply w-3/5 text-center leading-[150%] font-[400] font-roboto opacity-[0.87];
+  }
+  &__content {
+    @apply flex flex-col items-center gap-6;
+  }
+}
+
+.goal-vision {
+  @apply grid grid-cols-2 p-12 bg-[#F0F2FE] gap-12;
+  &__title {
+    @apply text-[24px] font-bolder  font-roboto;
+    background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  &__subtitle {
+    @apply leading-[120%] text-[48px] font-roboto font-bolder;
+  }
+  &__text {
+    @apply leading-[150%] text-[16px] text-[#6D6E76] font-[400] font-roboto;
+  }
+  &__item {
+    @apply flex flex-col gap-8;
+  }
+}
+
+.values {
+  @apply flex flex-col items-center gap-12 container mx-auto px-12 py-12;
+  &__title {
+    @apply text-primary font-[700] text-[48px] leading-[120%] font-roboto;
+  }
+  &__list {
+    @apply grid grid-cols-3 bg-[#f9f0fb] p-12 rounded-3xl gap-6;
+    &__item {
+      @apply flex flex-col items-start gap-6 px-6;
+      &--with-b {
+        @apply border-r border-blue-300;
+      }
+      &__title {
+        @apply text-primary font-[700] text-[24px] font-roboto leading-[120%];
+      }
+      &__text {
+        @apply text-primary leading-[150%] text-[18px] font-[400] font-roboto;
+      }
+    }
+  }
+}
+
+.team {
+  @apply flex items-start gap-6 container mx-auto px-12 py-24;
+  &__header {
+    @apply w-2/5 py-10;
+  }
+  &__cards {
+    @apply grid grid-cols-3 gap-5 flex-grow;
+  }
+  &__title {
+    @apply text-[48px] font-bolder font-roboto;
+  }
+  &__text {
+    @apply text-[18px] text-primary opacity-[0.87] font-[400] leading-[150%];
+  }
+  &__card {
+    @apply bg-[#E0E4FC]  rounded-[12px];
+    &__title {
+      @apply text-[24px] font-bolder text-primary font-roboto;
+    }
+    &__subtitle {
+      @apply text-[16px] font-[400] text-primary font-roboto opacity-[0.9];
+    }
+  }
+  &__footer {
+    @apply p-6;
+  }
+}
+
+.blog-header {
+  @apply container mx-auto px-12 flex flex-col gap-8;
+  &__title {
+    @apply text-[56px]  font-bolder text-primary;
+  }
+  &__subtitle {
+    @apply font-[400] text-[18px] text-primary leading-[150%] w-3/5;
+  }
+  &__header {
+    @apply flex flex-col font-roboto items-center gap-5 text-center;
+  }
+}
+
+.trending {
+  @apply flex gap-5 border rounded-[12px] p-8 border-[#D8D8D8];
+  &__title {
+    @apply font-roboto font-bolder text-[24px] leading-[120%];
+    background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__subtitle {
+    @apply font-bolder text-[48px] leading-[120%] text-primary;
+  }
+  &__header {
+    @apply flex flex-col gap-6 font-[400] text-[16px] leading-[150%] text-[#6D6E76];
+  }
+}
+
+.all-posts {
+  @apply container mx-auto px-12 py-24 flex flex-col gap-12;
+  &__list {
+    @apply grid grid-cols-3 gap-3;
+  }
+  &__header {
+    @apply font-roboto font-bolder text-[56px] leading-[61.6px];
+  }
+  &__item {
+    @apply font-roboto text-primary;
+    &__footer {
+      @apply py-7 flex flex-col gap-5;
+    }
+    &__title {
+      @apply font-bolder text-[24px] leading-[140%];
+    }
+    &__text {
+      @apply text-[16px] font-[400] opacity-[0.87] leading-[150%];
+    }
+    &__writer {
+      @apply opacity-[0.6] font-[500];
+    }
+  }
+  &__header {
+    @apply text-center;
+  }
+}
+
+.post {
+  @apply container flex flex-col items-center gap-8 mx-auto px-12 py-12 font-roboto text-primary;
+  &__title {
+    @apply w-3/5 text-center font-bold text-[48px];
+  }
+  &__subtitle {
+    @apply opacity-[0.6] text-[16px] font-[500];
+  }
+  &__content {
+    @apply flex flex-col gap-4 w-3/5;
+    &__title {
+      @apply font-bold text-[48px];
+    }
+    &__quote {
+      @apply border-l-2 border-[#E0E4FC] pl-4;
+    }
+  }
+}
+
+.tab-control {
+  @apply bg-[#E0E4FC] flex gap-6 p-3 rounded-[16px] font-bolder text-[16px];
+  &__item {
+    @apply px-6 py-3;
+    &--dark {
+      @apply bg-primary text-white rounded-[16px];
+    }
+  }
+}
