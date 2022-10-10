@@ -123,7 +123,7 @@
   @apply text-center;
 }
 .header__text {
-  @apply text-primary opacity-[0.87] text-center  font-normal text-[18px];
+  @apply text-primary opacity-[0.87] text-center  font-normal;
 }
 .header__input {
   @apply flex-grow outline-none;
@@ -142,7 +142,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  @apply text-[24px] font-bolder;
 }
 .features__header {
   @apply flex flex-col items-center gap-8;
@@ -157,7 +156,7 @@
   @apply text-primary flex flex-col gap-6;
 }
 .features__card__title {
-  @apply font-bolder text-[32px] leading-[120%];
+  @apply font-bolder  ;
 }
 .features__card__text {
   @apply font-normal  text-primary;
@@ -173,13 +172,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  @apply text-[24px] font-bolder;
 }
 .why-us-section__subtitle {
   @apply w-4/5;
 }
 .why-us-section__text {
-  @apply font-normal  leading-[150%] text-primary w-4/5;
+  @apply font-normal   text-primary w-4/5;
 }
 .why-us-section__list {
   @apply flex flex-col gap-10;
@@ -188,7 +186,7 @@
   @apply flex gap-8 items-center;
 }
 .why-us-section__list__item__text {
-  @apply font-[500] leading-[150%] text-[20px]  text-primary;
+  @apply    text-primary;
 }
 
 /* cta */
@@ -206,7 +204,7 @@
   @apply text-primary;
 }
 .cta__text {
-  @apply font-normal  leading-[24px]  text-primary w-[78%];
+  @apply font-normal    text-primary w-[78%];
 }
 .cta__gradient {
   @apply absolute top-0 w-full h-full;
@@ -236,13 +234,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  @apply text-[24px] font-bolder;
 }
 .discover-more__subtitle {
   @apply w-4/5;
 }
 .discover-more__text {
-  @apply font-normal  leading-[150%] text-primary w-4/5;
+  @apply font-normal   text-primary w-4/5;
 }
 .discover-more__list {
   @apply flex flex-col gap-10;
@@ -251,7 +248,7 @@
   @apply flex gap-8 items-center;
 }
 .discover-more__list__item__text {
-  @apply font-[500] leading-[150%] text-[20px]  text-primary;
+  @apply    text-primary;
 }
 
 /* services */
@@ -270,10 +267,10 @@
   @apply border-r border-blue-300;
 }
 .services__item__title {
-  @apply text-primary font-[700] text-[36px]  leading-[120%];
+  @apply text-primary    ;
 }
 .services__text {
-  @apply text-primary leading-[150%] text-[18px] font-normal;
+  @apply text-primary   font-normal;
 }
 
 /* testimonial */
@@ -291,7 +288,7 @@
   @apply flex flex-col gap-8 items-center text-center rounded-2xl border border-blue-300 p-12;
 }
 .testimonial__list__item__title {
-  @apply text-primary text-[18px] font-[600] leading-[150%] text-center;
+  @apply text-primary    text-center;
 }
 
 /* user */
@@ -300,13 +297,13 @@
   @apply text-primary text-center  flex flex-col gap-2 items-center;
 }
 .user__username {
-  @apply font-[500] text-[20px] leading-[150%];
+  @apply ;
 }
 .user__image {
   @apply h-[56px] w-[56px] rounded-full object-cover;
 }
 .user__title {
-  @apply text-[12px] leading-[18px] font-normal;
+  @apply  font-normal;
 }
 
 /* cta-section */
@@ -345,14 +342,11 @@
 .footer__col {
   @apply flex flex-col gap-2;
 }
-.footer__title {
-  @apply font-[600] text-[18px] leading-[150%];
-}
 .footer__links {
   @apply flex flex-col gap-2;
 }
 .footer__link {
-  @apply font-normal  leading-[150%]  opacity-[0.6];
+  @apply font-normal    opacity-[0.6];
 }
 .footer__lower {
   @apply flex gap-3 items-center;
@@ -361,7 +355,7 @@
   @apply flex gap-3 items-center;
 }
 .footer__socials__text {
-  @apply opacity-[0.5] text-[12px] font-normal;
+  @apply opacity-[0.5]  font-normal;
 }
 .footer__socials__list {
   @apply flex gap-3 text-center;
@@ -401,7 +395,7 @@
   @apply w-full rounded-[0.85rem] overflow-hidden;
 }
 .product-header__subtitle {
-  @apply font-normal text-[18px] leading-[150%];
+  @apply font-normal  ;
 }
 .product-header .logos {
   @apply relative bg-transparent z-10;
@@ -441,11 +435,11 @@
 .product-features__list {
   @apply grid grid-cols-3 gap-16 px-12 py-16  bg-gray-100   mr-12  rounded-tr-[5rem];
 }
-.product-features .features__card__title {
-  @apply font-bolder text-[24px] leading-[140%] text-primary;
+.product-features .feard__title {
+  @apply font-bolder0%] text-primary;
 }
 .product-features .features__card__text {
-  @apply leading-[150%] font-normal  text-primary;
+  @apply  font-normal  text-primary;
 }
 
 /* product-cta */
@@ -464,7 +458,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  @apply text-[24px] font-bolder;
   background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -474,7 +467,7 @@
   @apply w-4/5;
 }
 .product-cta__text {
-  @apply font-normal  leading-[150%] text-primary w-4/5;
+  @apply font-normal   text-primary w-4/5;
 }
 .product-cta__container {
   @apply flex gap-8 items-center relative z-10 bg-transparent justify-between;
@@ -514,7 +507,7 @@
   @apply text-center   w-4/5;
 }
 .plans-section__text {
-  @apply opacity-[0.87] text-primary leading-[150%] text-[18px] font-normal  w-3/5;
+  @apply opacity-[0.87] text-primary   font-normal  w-3/5;
 }
 .plans-section__container {
   @apply relative bg-transparent z-20 flex flex-col gap-12 items-center;
@@ -561,7 +554,7 @@
   @apply flex gap-6;
 }
 .plan__title {
-  @apply text-primary leading-[120%] text-[36px] font-bolder;
+  @apply text-primary   font-bolder;
 }
 .plan__subtitle {
   @apply text-primary opacity-[0.6]  font-normal;
@@ -570,7 +563,7 @@
   @apply flex flex-col gap-3 items-center;
 }
 .plan__text {
-  @apply text-center font-normal text-[14px] leading-[150%] text-primary opacity-[0.87] w-4/5;
+  @apply text-center font-normal  text-primary opacity-[0.87] w-4/5;
 }
 
 /* faq-section */
@@ -794,7 +787,7 @@
   @apply opacity-[0.87];
 }
 .all-posts__item__writer {
-  @apply opacity-[0.6] font-[500];
+  @apply opacity-[0.6];
 }
 .all-posts__header {
   @apply text-center;
@@ -809,7 +802,7 @@
   @apply w-3/5 text-center;
 }
 .post__subtitle {
-  @apply opacity-[0.6] font-[500];
+  @apply opacity-[0.6];
 }
 .post__content {
   @apply flex flex-col gap-4 w-3/5;
