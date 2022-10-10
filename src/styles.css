@@ -79,13 +79,13 @@
     @apply flex items-center;
   }
   .nav-bar__menu {
-    @apply flex items-center gap-6  font-normal text-[16px];
+    @apply flex items-center gap-6  font-normal;
   }
   .nav-bar__links {
     @apply flex items-center gap-3;
   }
   .nav-bar__item {
-    @apply flex items-center gap-6   font-normal text-[16px];
+    @apply flex items-center gap-6   font-normal;
   }
   .image {
     @apply w-full;
@@ -160,7 +160,7 @@
   @apply font-bolder text-[32px] leading-[120%];
 }
 .features__card__text {
-  @apply font-normal text-[16px] text-primary;
+  @apply font-normal  text-primary;
 }
 
 /* why-us-section */
@@ -179,7 +179,7 @@
   @apply w-4/5;
 }
 .why-us-section__text {
-  @apply font-normal text-[16px] leading-[150%] text-primary w-4/5;
+  @apply font-normal  leading-[150%] text-primary w-4/5;
 }
 .why-us-section__list {
   @apply flex flex-col gap-10;
@@ -206,7 +206,7 @@
   @apply text-primary;
 }
 .cta__text {
-  @apply font-normal text-[16px] leading-[24px]  text-primary w-[78%];
+  @apply font-normal  leading-[24px]  text-primary w-[78%];
 }
 .cta__gradient {
   @apply absolute top-0 w-full h-full;
@@ -242,7 +242,7 @@
   @apply w-4/5;
 }
 .discover-more__text {
-  @apply font-normal text-[16px] leading-[150%] text-primary w-4/5;
+  @apply font-normal  leading-[150%] text-primary w-4/5;
 }
 .discover-more__list {
   @apply flex flex-col gap-10;
@@ -352,7 +352,7 @@
   @apply flex flex-col gap-2;
 }
 .footer__link {
-  @apply font-normal text-[16px] leading-[150%]  opacity-[0.6];
+  @apply font-normal  leading-[150%]  opacity-[0.6];
 }
 .footer__lower {
   @apply flex gap-3 items-center;
@@ -445,7 +445,7 @@
   @apply font-bolder text-[24px] leading-[140%] text-primary;
 }
 .product-features .features__card__text {
-  @apply text-[16px] leading-[150%] font-normal  text-primary;
+  @apply leading-[150%] font-normal  text-primary;
 }
 
 /* product-cta */
@@ -474,7 +474,7 @@
   @apply w-4/5;
 }
 .product-cta__text {
-  @apply font-normal text-[16px] leading-[150%] text-primary w-4/5;
+  @apply font-normal  leading-[150%] text-primary w-4/5;
 }
 .product-cta__container {
   @apply flex gap-8 items-center relative z-10 bg-transparent justify-between;
@@ -555,7 +555,7 @@
   @apply flex flex-col gap-5;
 }
 .plan__item {
-  @apply flex gap-3 font-bolder text-[16px] text-primary;
+  @apply flex gap-3 font-bolder  text-primary;
 }
 .plan__header {
   @apply flex gap-6;
@@ -564,7 +564,7 @@
   @apply text-primary leading-[120%] text-[36px] font-bolder;
 }
 .plan__subtitle {
-  @apply text-primary opacity-[0.6] text-[16px] font-normal;
+  @apply text-primary opacity-[0.6]  font-normal;
 }
 .plan__titles--center {
   @apply flex flex-col gap-3 items-center;
