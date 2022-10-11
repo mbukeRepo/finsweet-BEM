@@ -354,13 +354,13 @@
 .footer__socials {
   @apply flex gap-3 items-center;
 }
-.footer__socials__text {
+.footer__socials-text {
   @apply opacity-[0.5]  font-normal;
 }
-.footer__socials__list {
+.footer__socials-list {
   @apply flex gap-3 text-center;
 }
-.footer__socials__list__item {
+.footer__socials-list__item {
   @apply bg-white;
 }
 
