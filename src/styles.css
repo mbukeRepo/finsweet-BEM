@@ -156,7 +156,7 @@
   @apply text-primary flex flex-col gap-6;
 }
 .features__card__title {
-  @apply font-bolder  ;
+  @apply font-bolder;
 }
 .features__card__text {
   @apply font-normal  text-primary;
@@ -186,7 +186,7 @@
   @apply flex gap-8 items-center;
 }
 .why-us-section__list__item__text {
-  @apply    text-primary;
+  @apply text-primary;
 }
 
 /* cta */
@@ -248,7 +248,7 @@
   @apply flex gap-8 items-center;
 }
 .discover-more__list__item__text {
-  @apply    text-primary;
+  @apply text-primary;
 }
 
 /* services */
@@ -267,7 +267,7 @@
   @apply border-r border-blue-300;
 }
 .services__item__title {
-  @apply text-primary    ;
+  @apply text-primary;
 }
 .services__text {
   @apply text-primary   font-normal;
@@ -297,13 +297,13 @@
   @apply text-primary text-center  flex flex-col gap-2 items-center;
 }
 .user__username {
-  @apply ;
+  @apply;
 }
 .user__image {
   @apply h-[56px] w-[56px] rounded-full object-cover;
 }
 .user__title {
-  @apply  font-normal;
+  @apply font-normal;
 }
 
 /* cta-section */
@@ -395,7 +395,7 @@
   @apply w-full rounded-[0.85rem] overflow-hidden;
 }
 .product-header__subtitle {
-  @apply font-normal  ;
+  @apply font-normal;
 }
 .product-header .logos {
   @apply relative bg-transparent z-10;
@@ -436,10 +436,10 @@
   @apply grid grid-cols-3 gap-16 px-12 py-16  bg-gray-100   mr-12  rounded-tr-[5rem];
 }
 .product-features .feard__title {
-  @apply font-bolder0%] text-primary;
+  @apply font-bolder text-primary;
 }
 .product-features .features__card__text {
-  @apply  font-normal  text-primary;
+  @apply font-normal  text-primary;
 }
 
 /* product-cta */
@@ -612,7 +612,7 @@
   @apply grid grid-cols-2 gap-12;
 }
 
-.contact-header__heading__subtitle {
+.contact-header__heading-subtitle {
   @apply mb-6;
 }
 
@@ -715,10 +715,10 @@
 .values__list {
   @apply grid grid-cols-3 bg-danger p-12 rounded-3xl gap-6;
 }
-.values__list__item {
+.values__list-item {
   @apply flex flex-col items-start gap-6 px-6;
 }
-.values__list__item--with-b {
+.values__list-item--with-b {
   @apply border-r border-blue-300;
 }
 
@@ -779,14 +779,14 @@
 .all-posts__list {
   @apply grid grid-cols-3 gap-3;
 }
-.all-posts__item__footer {
+.all-posts__item-footer {
   @apply py-7 flex flex-col gap-5;
 }
 
-.all-posts__item__text {
+.all-posts__item-text {
   @apply opacity-[0.87];
 }
-.all-posts__item__writer {
+.all-posts__item-writer {
   @apply opacity-[0.6];
 }
 .all-posts__header {
@@ -807,7 +807,7 @@
 .post__content {
   @apply flex flex-col gap-4 w-3/5;
 }
-.post__content__quote {
+.post__content-quote {
   @apply border-l-2 border-success pl-4;
 }
 
