@@ -363,15 +363,15 @@
 
 /* contact-us */
 
-.contact-us,
+.footer__contact-us,
 .faq-section__header,
 .goal-vision__item {
   @apply flex flex-col gap-8;
 }
-.contact-us__input {
+.footer__contact-us-input {
   @apply bg-secondary px-4 outline-none;
 }
-.contact-us__form {
+.footer__contact-us-form {
   @apply rounded-xl bg-secondary  flex items-center;
 }
 

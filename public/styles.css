@@ -553,12 +553,20 @@ p {
 
 /* button component */
 
-.button {
+.button, 
+.header__btn-wrapper,
+.nav-bar__btn-wrapper,
+.contact-us__btn-wrapper,
+.cta-section__btn-wrapper {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.button__inner {
+.button__inner, 
+.header__btn,
+.nav-bar__btn,
+.contact-us__btn,
+.cta-section__btn {
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
