@@ -557,7 +557,10 @@ p {
 .header__btn-wrapper,
 .nav-bar__btn-wrapper,
 .contact-us__btn-wrapper,
-.cta-section__btn-wrapper {
+.cta-section__btn-wrapper,
+.footer__contact-us-btn-wrapper,
+.plan__btn-wrapper,
+.product-header__btn-wrapper {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -566,7 +569,10 @@ p {
 .header__btn,
 .nav-bar__btn,
 .contact-us__btn,
-.cta-section__btn {
+.cta-section__btn,
+.footer__contact-us-btn,
+.plan__btn,
+.product-header__btn {
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -585,7 +591,9 @@ p {
   --tw-bg-opacity: 0.9;
 }
 
-.button__inner--white {
+.button__inner--white,
+.footer__contact-us-btn--white,
+.product-header__btn--white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
