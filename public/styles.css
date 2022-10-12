@@ -553,7 +553,7 @@ p {
 
 /* button component */
 
-.button, 
+.button,
 .header__btn-wrapper,
 .nav-bar__btn-wrapper,
 .contact-us__btn-wrapper,
@@ -562,7 +562,7 @@ p {
   outline-offset: 2px;
 }
 
-.button__inner, 
+.button__inner,
 .header__btn,
 .nav-bar__btn,
 .contact-us__btn,
@@ -1214,7 +1214,7 @@ p {
   padding-bottom: 4rem;
 }
 
-.logos__logo {
+.logos__itemo {
   flex: 1 1 0%;
 }
 
@@ -1726,13 +1726,13 @@ p {
 
 /* contact-us */
 
-.contact-us {
+.footer__contact-us {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.contact-us__input {
+.footer__contact-us-input {
   --tw-bg-opacity: 1;
   background-color: rgb(43 46 60 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -1741,7 +1741,7 @@ p {
   outline-offset: 2px;
 }
 
-.contact-us__form {
+.footer__contact-us-form {
   display: flex;
   align-items: center;
   border-radius: 0.75rem;
