@@ -1017,7 +1017,7 @@ p {
   gap: 2.5rem;
 }
 
-.why-us-section__list-item {
+.why-us-section__card {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -1374,7 +1374,7 @@ p {
   padding-right: 1.5rem;
 }
 
-.services__item--with-b {
+.services__item--with-border {
   border-right-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(147 197 253 / var(--tw-border-opacity));
@@ -1474,7 +1474,7 @@ p {
   text-align: center;
 }
 
-.testimonial__list-title {
+.testimonial__item-title {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -2804,7 +2804,7 @@ p {
   padding-right: 1.5rem;
 }
 
-.values__list-item--with-b {
+.values__list-item--with-border {
   border-right-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(147 197 253 / var(--tw-border-opacity));
@@ -2922,7 +2922,7 @@ p {
   opacity: 0.9;
 }
 
-.team__footer {
+.team__card-footer {
   padding: 1.5rem;
 }
 

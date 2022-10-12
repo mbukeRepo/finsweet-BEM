@@ -183,7 +183,7 @@
 .why-us-section__list {
   @apply flex flex-col gap-10;
 }
-.why-us-section__list-item {
+.why-us-section__card {
   @apply flex gap-8 items-center;
 }
 .why-us-section__list-text {
@@ -260,7 +260,7 @@
 .services__item {
   @apply flex flex-col items-start gap-6 px-6;
 }
-.services__item--with-b {
+.services__item--with-border {
   @apply border-r border-blue-300;
 }
 .services__item-title {
@@ -284,7 +284,7 @@
 .testimonial__list-item {
   @apply flex flex-col gap-8 items-center text-center rounded-2xl border border-blue-300 p-12;
 }
-.testimonial__list-title {
+.testimonial__item-title {
   @apply text-primary    text-center;
 }
 
@@ -711,7 +711,7 @@
 .values__list-item {
   @apply flex flex-col items-start gap-6 px-6;
 }
-.values__list-item--with-b {
+.values__list-item--with-border {
   @apply border-r border-blue-300;
 }
 
@@ -735,9 +735,9 @@
 }
 
 .team__card-subtitle {
-  @apply opacity-[0.9];
+  @apply opacity-90;
 }
-.team__footer {
+.team__card-footer {
   @apply p-6;
 }
 
