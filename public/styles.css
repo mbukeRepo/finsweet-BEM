@@ -928,13 +928,13 @@ p {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.features__card__title {
+.features__card-title {
   font-size: 32px;
   font-weight: 700;
   line-height: 120%;
 }
 
-.features__card__text {
+.features__card-text {
   font-size: 16px;
   font-weight: 400;
   --tw-text-opacity: 1;
@@ -1017,13 +1017,13 @@ p {
   gap: 2.5rem;
 }
 
-.why-us-section__list__item {
+.why-us-section__list-item {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.why-us-section__list__item__text {
+.why-us-section__list-text {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
@@ -1286,13 +1286,13 @@ p {
   gap: 2.5rem;
 }
 
-.discover-more__list__item {
+.discover-more__list-item {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.discover-more__list__item__text {
+.discover-more__list-text {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
@@ -1461,7 +1461,7 @@ p {
   gap: 2rem;
 }
 
-.testimonial__list__item {
+.testimonial__list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1474,7 +1474,7 @@ p {
   text-align: center;
 }
 
-.testimonial__list__item__title {
+.testimonial__list-title {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -1711,7 +1711,7 @@ p {
   text-align: center;
 }
 
-.footer__socials-list__item {
+.footer__socials-list-item {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -1948,7 +1948,7 @@ p {
   padding-bottom: 4rem;
 }
 
-.product-features .features__card__title {
+.product-features .features__card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 140%;
@@ -1956,7 +1956,7 @@ p {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.product-features .features__card__text {
+.product-features .features__card-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
@@ -2907,14 +2907,14 @@ p {
   background-color: rgb(224 228 252 / var(--tw-bg-opacity));
 }
 
-.team__card__title {
+.team__card-title {
   font-size: 24px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.team__card__subtitle {
+.team__card-subtitle {
   font-size: 16px;
   font-weight: 400;
   --tw-text-opacity: 1;
