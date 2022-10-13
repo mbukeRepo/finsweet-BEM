@@ -24,6 +24,7 @@ module.exports = {
         success: "#E0E4FC",
         danger: "#d798e126",
         lightGray: "#F0F2FE",
+        veryLightBlue: "#D3FDFF"
       },
       fontWeight: {
         bolder: 700,
