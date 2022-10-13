@@ -60,15 +60,9 @@
 
   /*component: nav-bar*/
   .nav-bar__link {
-    @apply relative w-full h-full;
+    @apply relative w-full h-full after:content-[""] after:absolute after:hover:after:w-full after:hover:after:opacity-100 after:inline-block after:-bottom-1 after:left-0 after:h-[0.15rem] after:w-0 after:bg-black after:opacity-0 after:transition-all after:duration-300;
   }
-  .nav-bar__link::after {
-    content: "";
-    @apply absolute inline-block -bottom-1 left-0 h-[0.15rem] w-0 bg-black opacity-0 transition-all duration-300;
-  }
-  .nav-bar__link:hover:after {
-    @apply w-full opacity-100;
-  }
+
   .nav-bar {
     @apply container mx-auto px-10 py-4  relative z-20 bg-white;
   }
@@ -328,27 +322,22 @@
 .footer__header {
   @apply flex gap-10 w-full py-16  justify-around;
 }
-.footer__col {
-  @apply flex flex-col gap-2;
-}
+.footer__col,
 .footer__links {
   @apply flex flex-col gap-2;
 }
 .footer__link {
-  @apply font-normal    opacity-60;
+  @apply font-normal opacity-60;
 }
-.footer__lower {
-  @apply flex gap-3 items-center;
-}
-.footer__socials {
-  @apply flex gap-3 items-center;
-}
-.footer__socials-text {
-  @apply opacity-[0.5]  font-normal;
-}
+.footer__lower,
+.footer__socials ,
 .footer__socials-list {
   @apply flex gap-3 text-center;
 }
+.footer__socials-text {
+  @apply opacity-50  font-normal;
+}
+
 .footer__socials-list-item {
   @apply bg-white;
 }
@@ -393,8 +382,6 @@
 }
 .product-header__gradient {
   @apply absolute top-12 right-0 w-[1000px] h-[580px] overflow-hidden blur-[3.125rem] bg-veryLightBlue;
-  filter: blur(50px);
-  background: rgb(211, 236, 242);
   background: radial-gradient(
     circle,
     rgb(211, 236, 242) 42%,
